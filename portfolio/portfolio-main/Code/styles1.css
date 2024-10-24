@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0; /* แก้ไขให้เป็น 0 เพื่อให้ไม่มีช่องว่าง */
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeaea; /* สีพื้นหลังที่อบอุ่น */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #6a82fb, #fc5c7d); /* เปลี่ยนเป็นสีที่ดูสดใส */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้กับ header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
+}
+
+nav ul li a:hover {
+    color: #ffe600; /* เปลี่ยนสีเมื่อเลื่อนเมาส์ */
+}
+
+main {
+    text-align: center;
+    padding: 30px; /* เพิ่ม padding */
+    margin: 20px auto;
+    background-size: cover; /* ทำให้ภาพครอบคลุมพื้นที่ */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้กับ main */
+    max-width: 800px;
+}
+
+h2 {
+    color: #ff4081; /* เปลี่ยนสีหัวข้อให้สดใส */
+    margin-bottom: 20px;
+    font-size: 30px; /* ขนาดฟอนต์ที่ใหญ่ขึ้น */
+}
+
+ul {
+    list-style-type: circle; /* เปลี่ยนเป็น bullet point รูปวงกลม */
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 18px; /* ขนาดฟอนต์ที่ใหญ่ขึ้น */
+}
