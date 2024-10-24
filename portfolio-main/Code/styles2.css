@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #6a82fb, #fc5c7d);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.hobby-container {
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงในแนวนอน */
+    justify-content: space-around; /* จัดเรียงให้มีช่องว่างระหว่างแต่ละอัน */
+    flex-wrap: wrap; /* ทำให้มีการย่อขนาดเมื่อหน้าจอเล็ก */
+}
+
+.hobby {
+    background: white;
+    margin: 10px; /* ช่องว่างระหว่างกิจกรรม */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* ทำให้ทุกอันมีขนาดที่เท่ากัน */
+    min-width: 250px; /* กำหนดความกว้างขั้นต่ำ */
+    max-width: 300px; /* กำหนดความกว้างสูงสุด */
+}
+
+.hobby-image {
+    max-width: 100%; /* ทำให้รูปภาพขยายตามความกว้างของ container */
+    height: auto; /* รักษาสัดส่วนของรูปภาพ */
+    border-radius: 8px; /* มุมของรูปภาพมน */
+}
+
+h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #ff4081; /* สีหัวข้อย่อย */
+    margin: 15px 0;
+}
+
+p {
+    font-size: 16px; /* ขนาดฟอนต์สำหรับรายละเอียด */
+    color: #666; /* สีสำหรับข้อความทั่วไป */
+}

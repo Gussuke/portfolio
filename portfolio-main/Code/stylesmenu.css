@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141414; /* สีพื้นหลังแบบ Netflix */
+    color: #ffffff; /* สีข้อความ */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ทำให้มีความสูงอย่างน้อย 100% ของหน้าจอ */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center; /* ทำให้ข้อความอยู่กลาง */
+    flex: 1; /* ทำให้ container ขยายเต็มที่ */
+    display: flex;
+    flex-direction: column; /* จัดวางแนวตั้ง */
+    justify-content: space-between; /* จัดให้มีพื้นที่ว่างระหว่างเนื้อหาและลิงก์ */
+}
+
+h1 {
+    color: #e50914; /* สีแดง Netflix */
+}
+
+.profiles {
+    display: flex; /* ใช้ flexbox */
+    justify-content: center; /* จัดให้อยู่กลาง */
+    gap: 20px; /* เว้นระยะระหว่างโปรไฟล์ */
+}
+
+.profile {
+    background-color: #222222; /* สีพื้นหลังของโปรไฟล์ */
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s; /* เพิ่มการเคลื่อนไหวเมื่อเอาเมาส์ไปอยู่เหนือ */
+    width: 300px; /* กำหนดความกว้าง */
+}
+
+.profile img {
+    width: 100%; /* ทำให้ภาพเต็มขนาด */
+    border-radius: 8px 8px 0 0; /* ทำมุมของภาพกลม */
+}
+
+.profile h2 {
+    color: #e50914; /* สีหัวข้อโปรไฟล์ */
+    margin: 10px 0 5px;
+}
+
+.profile p {
+    color: #b3b3b3; /* สีข้อความรายละเอียด */
+}
+
+.profile:hover {
+    transform: scale(1.05); /* ขยายเมื่อเอาเมาส์ไปอยู่เหนือ */
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #e50914; /* สีปุ่ม */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #f40612; /* สีเมื่อเอาเมาส์ไปอยู่เหนือปุ่ม */
+}
